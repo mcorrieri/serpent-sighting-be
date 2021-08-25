@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @snake.name %>
+</p>
+
+<p>
+  <strong>Sci name:</strong>
+  <%= @snake.sci_name %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @snake.picture %>
+</p>
+
+<p>
+  <strong>Venomous:</strong>
+  <%= @snake.venomous %>
+</p>
+
+<p>
+  <strong>Max length:</strong>
+  <%= @snake.max_length %>
+</p>
+
+<p>
+  <strong>Diet:</strong>
+  <%= @snake.diet %>
+</p>
+
+<%= link_to 'Edit', edit_snake_path(@snake) %> |
+<%= link_to 'Back', snakes_path %>
