@@ -15,4 +15,8 @@ Mike = User.create(username: "SerpentBoi68", password_digest: "123", email: "mlc
 puts "creating Snakes"
 Copperhead = Snake.create(name: "Eastern Copperhead", sci_name: "Agkistrodon contortrix", picture: "https://dnr.maryland.gov/wildlife/PublishingImages/snake_NC_LinhPhu.jpg", venomous: true, max_length: 53, diet: "mainly mice but also birds, snakes, amphibians and insects" )
 
+puts "creating Sighting"
+s1 = Sighting.create(comment: "Holy mackeral moses! This black snake was huge.", location: "Sykesville", date: "August 24, 2021", size: "4 foot", user_id: Mike.id )
+
+
 puts "Done!!!"
