@@ -4,20 +4,24 @@ class UsersController < ApplicationController
   # GET /users or /users.json
   def index
     @users = User.all
-    render json: @user
+    render json: @users
   end
 
   # GET /users/1 or /users/1.json
   def show
+    render json: @user
   end
 
   # GET /users/new
   def new
     @user = User.new
+    render json: @user
+
   end
 
   # GET /users/1/edit
   def edit
+    render json: @user
   end
 
   # POST /users or /users.json

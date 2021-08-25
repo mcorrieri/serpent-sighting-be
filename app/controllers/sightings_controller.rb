@@ -4,10 +4,14 @@ class SightingsController < ApplicationController
   # GET /sightings or /sightings.json
   def index
     @sightings = Sighting.all
+    render json: @sightings
+    
   end
 
   # GET /sightings/1 or /sightings/1.json
   def show
+    render json: @sighting
+
   end
 
   # GET /sightings/new
@@ -17,6 +21,8 @@ class SightingsController < ApplicationController
 
   # GET /sightings/1/edit
   def edit
+    render json: @sighting
+
   end
 
   # POST /sightings or /sightings.json
