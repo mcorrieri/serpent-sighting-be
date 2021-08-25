@@ -4,15 +4,18 @@ class SnakesController < ApplicationController
   # GET /snakes or /snakes.json
   def index
     @snakes = Snake.all
+    render json: @snakes
   end
 
   # GET /snakes/1 or /snakes/1.json
   def show
+    render json: @snake
   end
 
   # GET /snakes/new
   def new
     @snake = Snake.new
+    render json: @snake
   end
 
   # GET /snakes/1/edit
@@ -26,7 +29,7 @@ class SnakesController < ApplicationController
     respond_to do |format|
       if @snake.save
         format.html { redirect_to @snake, notice: "Snake was successfully created." }
-        format.json { render :show, status: :created, location: @snake }
+        render json: @snake
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @snake.errors, status: :unprocessable_entity }
