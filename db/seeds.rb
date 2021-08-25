@@ -8,6 +8,7 @@
 
 User.destroy_all 
 Snake.destroy_all
+Sighting.destroy_all
 
 puts "creating Users"
 Mike = User.create(username: "SerpentBoi68", password_digest: "123", email: "mlc@duey.com", profile_pic: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.biography.com%2Fus-president%2Fjohn-f-kennedy&psig=AOvVaw0uxBpNaeUZ7zjBWFmSsw4A&ust=1629938959864000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIicrfj5yvICFQAAAAAdAAAAABAD", location: "Baltimore,MD", bio: "30 years old. Single. Love oreos and snakes :)")
@@ -24,6 +25,7 @@ Mtn_Earthsnake = Snake.create(name: "Mountain Earthsnake", sci_name:"Virginia va
 
 puts "creating Sighting"
 s1 = Sighting.create(comment: "Holy mackeral moses! This black snake was huge.", location: "Sykesville", date: "August 24, 2021", size: "4 foot", user_id: Mike.id )
+s2 = Sighting.create(comment: "Almost got bit by that dang ole timber rattler!", location: "Frederick", date: "August 1, 2021", size: "Probably about 23 inches", user_id: Duey.id )
 
 
 puts "Done!!!"
