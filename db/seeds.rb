@@ -11,7 +11,7 @@ Snake.destroy_all
 Sighting.destroy_all
 
 puts "creating Users"
-Mike = User.create(username: "SerpentBoi68", password_digest: "123", email: "mlc@duey.com", profile_pic: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.biography.com%2Fus-president%2Fjohn-f-kennedy&psig=AOvVaw0uxBpNaeUZ7zjBWFmSsw4A&ust=1629938959864000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCIicrfj5yvICFQAAAAAdAAAAABAD", location: "Baltimore,MD", bio: "30 years old. Single. Love oreos and snakes :)")
+Mike = User.create(username: "SerpentBoi68", password_digest: "123", email: "mlc@duey.com", profile_pic: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/1200px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg", location: "Baltimore,MD", bio: "30 years old. Single. Love oreos and snakes :)")
 Duey = User.create(username: "Dueywfangs", password_digest: "123", email: "duey@duey.com", profile_pic: "https://pbs.twimg.com/profile_images/1090376349993324545/nzvJHR_X.jpg", location: "Mineral Hill,MD", bio: "I have seen all the snakes in this vast existence, througout all time, past and present.")
 
 puts "creating Snakes"
